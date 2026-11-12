@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="Hetagames Record/FanRecord.csproj">
+    <Deploy Solution="Debug|*" />
+  </Project>
+</Solution>

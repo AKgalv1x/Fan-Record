@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FanRecord.MainPage"
+             BackgroundColor="#141215" 
+             Shell.NavBarIsVisible="False">
+
+    <Grid RowDefinitions="*, Auto, *">
+        <!-- Icono y Título animado -->
+        <VerticalStackLayout Grid.Row="1" Spacing="20" VerticalOptions="Center">
+            <Label x:Name="lblIcono"
+                   Text="🎮"
+                   FontSize="90"
+                   HorizontalOptions="Center" />
+
+            <Label x:Name="lblTitulo"
+                   Text="FanRecord"
+                   FontSize="38"
+                   FontAttributes="Bold"
+                   TextColor="#D4A373"
+                   HorizontalOptions="Center" />
+
+            <Label Text="Tu registro personal de Hetajuegos y más."
+                   FontSize="16"
+                   TextColor="#A8A29E"
+                   HorizontalTextAlignment="Center"
+                   Margin="30,0" />
+
+            <Button x:Name="btnEntrar"
+                    Text="Ingresar al Archivo"
+                    Clicked="OnEntrarClicked"
+                    BackgroundColor="#D4A373"
+                    TextColor="#141215"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                    CornerRadius="25"
+                    HeightRequest="55"
+                    WidthRequest="220"
+                    HorizontalOptions="Center"
+                    Margin="0,30,0,0" />
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>
